@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sunflour Bakery — Calabar</title>
+
+  <!-- PWA Meta -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#e34a3b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="assets/icons/icon-512.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/components.css">
+
+  <!-- SEO -->
+  <meta name="description"
+    content="Sunflour Bakery — Fresh breads, cakes, pastries and fast foods in Calabar. Order online for delivery or pickup.">
+  <meta name="keywords" content="bakery, bread, cakes, pastries, fast food, Calabar, Nigeria, fresh baked goods">
+  <meta name="author" content="Sunflour Bakery">
+  <meta property="og:title" content="Sunflour Bakery — Fresh Baked Goods in Calabar">
+  <meta property="og:description"
+    content="Taste the sunshine with our fresh breads, cakes, and pastries. Order online for delivery in Calabar.">
+  <meta property="og:image" content="assets/images/bread_category.png">
+  <meta property="og:url" content="https://sunflourbakery.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://sunflourbakery.com">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Sunflour Bakery",
+    "description": "Fresh breads, cakes, pastries and fast foods baked daily in Calabar",
+    "url": "https://sunflourbakery.com",
+    "telephone": "+2341234567890",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Bakery Street",
+      "addressLocality": "Calabar",
+      "addressRegion": "Cross River",
+      "addressCountry": "NG"
+    },
+    "openingHours": [
+      "Mo-Fr 07:00-19:00",
+      "Sa 08:00-18:00",
+      "Su 09:00-16:00"
+    ],
+    "servesCuisine": "Bakery",
+    "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "500"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Skip to content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/icons/icon-512.png" alt="Sunflour Bakery logo" width="48" height="48">
+        <span class="brand-name">Sunflour Bakery</span>
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav"
+        aria-label="Toggle navigation menu">
+        <span class="nav-toggle-icon"></span>
+      </button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="order-success.html">Payment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <h1 class="hero-title">Taste the Sunshine — Fresh from our Ovens in Calabar</h1>
+            <p class="hero-sub">Breads, cakes, pastries, fast food and drinks — baked daily with love. Order online for
+              pickup or delivery.</p>
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="menu.html">See the Menu</a>
+              <a class="btn btn-outline" href="catering.html">Order for Events</a>
+            </div>
+            <ul class="hero-features">
+              <li>Fresh daily — locally sourced ingredients</li>
+              <li>Custom cakes & event catering</li>
+              <li>Fast delivery across Calabar</li>
+            </ul>
+          </div>
+          <div class="hero-image" aria-hidden="true" style="background-image:url('assets/images/hero_background.png')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories container">
+      <h2>Our Categories</h2>
+      <div class="category-grid">
+        <div class="category-item">
+          <img src="assets/images/bread_category.png" alt="Breads" loading="lazy">
+          <h3>Breads</h3>
+          <p>Fresh loaves and rolls daily.</p>
+          <a href="menu.html?category=breads" class="btn btn-ghost">Explore</a>
+        </div>
+        <div class="category-item">
+          <img src="assets/images/cake_category.png" alt="Cakes" loading="lazy">
+          <h3>Cakes</h3>
+          <p>Custom cakes for every occasion.</p>
+          <a href="menu.html?category=cakes" class="btn btn-ghost">Explore</a>
+        </div>
+        <div class="category-item">
+          <img src="assets/images/pastries_category.png" alt="Pastries" loading="lazy">
+          <h3>Pastries</h3>
+          <p>Flaky and delicious treats.</p>
+          <a href="menu.html?category=pastries" class="btn btn-ghost">Explore</a>
+        </div>
+        <div class="category-item">
+          <img src="assets/images/fastfood_category.png" alt="Fast Foods" loading="lazy">
+          <h3>Fast Foods</h3>
+          <p>Quick and tasty meals.</p>
+          <a href="menu.html?category=fastfoods" class="btn btn-ghost">Explore</a>
+        </div>
+        <div class="category-item">
+          <img src="assets/images/drinks_category.png" alt="Drinks" loading="lazy">
+          <h3>Drinks</h3>
+          <p>Refreshing beverages.</p>
+          <a href="menu.html?category=drinks" class="btn btn-ghost">Explore</a>
+        </div>
+        <div class="category-item">
+          <img src="assets/images/more_category.png" alt="More" loading="lazy">
+          <h3>More</h3>
+          <p>Seasonal specials and more.</p>
+          <a href="menu.html?category=more" class="btn btn-ghost">Explore</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured container">
+      <h2>Featured Picks</h2>
+      <div class="card-grid">
+        <article class="product-card">
+          <img src="assets/images/sourdough_bread.png" alt="Signature Loaf" class="product-image" loading="lazy">
+          <div class="product-body">
+            <h3 class="product-title">Signature Country Loaf</h3>
+            <p class="product-tags">Breads • Rustic • ₦800</p>
+            <p class="product-desc">Hand-shaped sourdough with a golden crust — perfect for breakfast and sandwiches.
+            </p>
+            <div class="product-actions">
+              <button class="btn btn-small">Order Now</button>
+              <button class="btn btn-ghost" data-action="quickview">Quick View</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="assets/images/chocolate_cake.png" alt="Chocolate Cake" class="product-image" loading="lazy">
+          <div class="product-body">
+            <h3 class="product-title">Decadent Chocolate Cake</h3>
+            <p class="product-tags">Cakes • Rich • ₦2500</p>
+            <p class="product-desc">Layers of moist chocolate with ganache frosting.</p>
+            <div class="product-actions">
+              <button class="btn btn-small">Order Now</button>
+              <button class="btn btn-ghost" data-action="quickview">Quick View</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="assets/images/butter_croissant.png" alt="Croissant" class="product-image" loading="lazy">
+          <div class="product-body">
+            <h3 class="product-title">Buttery Croissant</h3>
+            <p class="product-tags">Pastries • Flaky • ₦400</p>
+            <p class="product-desc">Golden, flaky pastry baked fresh every morning.</p>
+            <div class="product-actions">
+              <button class="btn btn-small">Order Now</button>
+              <button class="btn btn-ghost" data-action="quickview">Quick View</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="why-choose-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Why Us</span>
+          <h2>Why Choose Sunflour Bakery?</h2>
+          <p class="section-sub">We're more than just a bakery — we're your neighborhood's favorite since 2014.</p>
+        </div>
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon">🍞</div>
+            <h3>Baked Fresh Daily</h3>
+            <p>Every loaf, cake, and pastry is made fresh each morning using time-honored recipes.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">🌿</div>
+            <h3>100% Local Ingredients</h3>
+            <p>We source from local farmers to bring you the freshest, most authentic flavors.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">🎂</div>
+            <h3>Custom Orders Welcome</h3>
+            <p>Personalize your cakes and treats for weddings, birthdays, and special events.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">⭐</div>
+            <h3>Award-Winning Quality</h3>
+            <p>Over 500 five-star reviews and 10+ years of baking excellence in Calabar.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">🚚</div>
+            <h3>Fast Local Delivery</h3>
+            <p>Get your favorites delivered fresh to your doorstep within hours of ordering.</p>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon">💜</div>
+            <h3>Community First</h3>
+            <p>Supporting local events, schools, and families — we're proud to serve Calabar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials container">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-grid">
+        <blockquote class="testimonial">
+          <img src="assets/images/avatar_ada.png" alt="Ada O." class="testimonial-avatar" loading="lazy">
+          <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"The best bread in Calabar! Fresh and delicious every single time. I've been a loyal customer for 3 years
+            now."</p>
+          <cite>Ada O.<small>Regular Customer</small></cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <img src="assets/images/avatar_john.png" alt="John E." class="testimonial-avatar" loading="lazy">
+          <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Their wedding cake was an absolute masterpiece. Our guests couldn't stop raving about it!"</p>
+          <cite>John E.<small>Happy Groom</small></cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <img src="assets/images/avatar_mary.png" alt="Mary T." class="testimonial-avatar" loading="lazy">
+          <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Quick service and amazing pastries. The croissants are to die for. My go-to spot for breakfast!"</p>
+          <cite>Mary T.<small>Local Resident</small></cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <img src="assets/images/avatar_emeka.png" alt="Emeka N." class="testimonial-avatar" loading="lazy">
+          <div class="testimonial-rating" aria-label="4 out of 5 stars">★★★★☆</div>
+          <p>"Best shawarma in town! The meat pies are also fantastic. Perfect for office lunch orders."</p>
+          <cite>Emeka N.<small>Business Professional</small></cite>
+        </blockquote>
+        <blockquote class="testimonial">
+          <img src="assets/images/avatar_sarah.png" alt="Sarah K." class="testimonial-avatar" loading="lazy">
+          <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"The birthday cake they made for my daughter was beautiful and delicious. Will definitely order again!"</p>
+          <cite>Sarah K.<small>Happy Mom</small></cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container">
+        <h2>Our Impact</h2>
+        <div class="stats-grid">
+          <div class="stat">
+            <h3>10+</h3>
+            <p>Years Baking</p>
+          </div>
+          <div class="stat">
+            <h3>5000+</h3>
+            <p>Happy Customers</p>
+          </div>
+          <div class="stat">
+            <h3>100+</h3>
+            <p>Events Catered</p>
+          </div>
+          <div class="stat">
+            <h3>50+</h3>
+            <p>Daily Products</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Ready to Taste the Sunshine?</h2>
+        <p>Visit us today or place your order online.</p>
+        <div class="cta-buttons">
+          <a class="btn btn-primary" href="menu.html">Order Now</a>
+          <a class="btn btn-outline" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container">
+        <h2>Stay Updated</h2>
+        <p>Subscribe for baking tips, specials, and community news.</p>
+        <form id="newsletterForm">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/icons/icon-512.png" alt="Sunflour Bakery logo" width="40" height="40">
+          <span>Sunflour Bakery</span>
+        </div>
+        <div class="footer-links">
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="catering.html">Catering</a>
+          <a href="contact.html">Contact</a>
+          <a href="blog.html">Blog</a>
+        </div>
+        <div class="footer-contact">
+          <a href="https://wa.me/2349036826272" target="_blank" rel="noopener" class="whatsapp-link"
+            aria-label="Chat on WhatsApp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            <span>Chat with us</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Sunflour Bakery — Calabar. All rights reserved.</p>
+        <p class="crafted-by">App crafted by <strong>KING</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/modal.js" defer></script>
+  <script src="scripts/animations.js" defer></script>
+  <script src="scripts/pwa.js" defer></script>
+
+  <!-- Modal component -->
+  <!-- Inlined so SPA can find the element quickly; can be moved to server-include or fetch as needed -->
+  <!-- components/modal.html content -->
+  <div class="modal" id="productModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-panel" role="document">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-content">
+        <img id="modalImage" src="assets/images/sourdough_bread.png" alt=""
+          style="width:100%;height:auto;border-radius:8px;object-fit:cover;margin-bottom:.75rem">
+        <h2 id="modalTitle">Product title</h2>
+        <p id="modalTags" class="product-tags"></p>
+        <p id="modalDesc" class="product-desc" style="margin-top:.5rem;color:var(--muted)"></p>
+        <div style="margin-top:1rem;display:flex;gap:.5rem;">
+          <button id="modalOrder" class="btn btn-primary">Order Now</button>
+          <button id="modalClose" class="btn btn-ghost">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Mobile sticky CTA (visible on small screens) -->
+  <div class="mobile-cta" aria-hidden="false" role="region" aria-label="Quick actions">
+    <div class="mobile-cta-inner">
+      <a class="btn btn-primary mobile-cta-btn" href="menu.html" aria-label="Order Now">Order Now</a>
+      <button class="mobile-cta-dismiss" aria-label="Dismiss order call-to-action">×</button>
+    </div>
+  </div>
+  <!-- Bottom Navigation (Mobile) -->
+  <nav class="bottom-nav" aria-label="Quick navigation">
+    <div class="bottom-nav-inner">
+      <a href="index.html" class="bottom-nav-item active" aria-current="page">
+        <span class="bottom-nav-icon">🏠</span>
+        <span>Home</span>
+      </a>
+      <a href="menu.html" class="bottom-nav-item">
+        <span class="bottom-nav-icon">🍞</span>
+        <span>Menu</span>
+      </a>
+      <a href="catering.html" class="bottom-nav-item">
+        <span class="bottom-nav-icon">🎂</span>
+        <span>Catering</span>
+      </a>
+      <a href="checkout.html" class="bottom-nav-item">
+        <span class="bottom-nav-icon">🛒</span>
+        <span>Cart</span>
+        <span class="bottom-nav-badge" id="cartBadge" style="display:none">0</span>
+      </a>
+      <a href="contact.html" class="bottom-nav-item">
+        <span class="bottom-nav-icon">📍</span>
+        <span>Contact</span>
+      </a>
+    </div>
+  </nav>
+</body>
+
+</html>

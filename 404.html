@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Page Not Found — Sunflour Bakery</title>
+
+    <!-- PWA Meta -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#e34a3b">
+    <link rel="apple-touch-icon" href="assets/icons/icon-512.png">
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <meta name="description" content="The page you're looking for doesn't exist. Return to Sunflour Bakery homepage." />
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="assets/icons/icon-512.png" alt="Sunflour Bakery logo" width="48" height="48" />
+                <span class="brand-name">Sunflour Bakery</span>
+            </a>
+            <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav"
+                aria-label="Toggle navigation menu">
+                <span class="nav-toggle-icon"></span>
+            </button>
+            <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="verify.html">Verify</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="order-success.html">Order Success</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="error-page container">
+            <div class="error-content">
+                <div class="error-icon">🥐</div>
+                <h1>404</h1>
+                <h2>Oops! This page doesn't exist</h2>
+                <p>Looks like this bread got burnt. Let's get you back to the fresh stuff!</p>
+                <div class="error-actions">
+                    <a href="index.html" class="btn btn-primary">Go Home</a>
+                    <a href="menu.html" class="btn btn-outline">View Menu</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                &copy; <span id="year"></span> Sunflour Bakery — Calabar. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <nav class="bottom-nav" aria-label="Quick navigation">
+        <div class="bottom-nav-inner">
+            <a href="index.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🏠</span>
+                <span>Home</span>
+            </a>
+            <a href="menu.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🍞</span>
+                <span>Menu</span>
+            </a>
+            <a href="catering.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🎂</span>
+                <span>Catering</span>
+            </a>
+            <a href="checkout.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">🛒</span>
+                <span>Cart</span>
+            </a>
+            <a href="contact.html" class="bottom-nav-item">
+                <span class="bottom-nav-icon">📍</span>
+                <span>Contact</span>
+            </a>
+        </div>
+    </nav>
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/pwa.js" defer></script>
+</body>
+
+</html>

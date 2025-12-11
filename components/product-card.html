@@ -1,0 +1,35 @@
+<!-- components/product-card.html
+     Reusable product card snippet. Paste where needed or fetch via template.
+     Mobile-first markup: compact card with image, title, tags, price and CTAs.
+-->
+<article class="product-card" data-id="{{id}}">
+  <img
+    class="product-image"
+    src="assets/images/{{image}}"
+    alt="{{alt}}"
+    loading="lazy"
+  />
+  <div class="product-body">
+    <div>
+      <h3 class="product-title">{{title}}</h3>
+      <p class="product-tags">{{category}} • ₦{{price}}</p>
+      <p class="product-desc">{{shortDescription}}</p>
+    </div>
+    <div class="product-actions">
+      <button
+        class="btn-small btn-primary"
+        data-action="order"
+        aria-label="Order {{title}}"
+      >
+        Order Now
+      </button>
+      <button
+        class="btn-ghost"
+        data-action="quickview"
+        aria-label="Quick view {{title}}"
+      >
+        Quick View
+      </button>
+    </div>
+  </div>
+</article>

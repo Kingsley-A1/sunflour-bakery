@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Checkout — Sunflour Bakery</title>
+
+  <!-- PWA Meta -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#e34a3b">
+  <link rel="apple-touch-icon" href="assets/icons/icon-512.png">
+
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <meta name="description" content="Complete your order at Sunflour Bakery. Secure payment options available." />
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/icons/icon-512.png" alt="Sunflour Bakery logo" width="48" height="48" />
+        <span class="brand-name">Sunflour Bakery</span>
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav"
+        aria-label="Toggle navigation menu">
+        <span class="nav-toggle-icon"></span>
+      </button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="checkout.html" aria-current="page">Checkout</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="order-success.html">Payment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="checkout-hero container">
+      <h1>Checkout</h1>
+      <p>Complete your order securely.</p>
+    </section>
+
+    <section class="checkout container">
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="items-list" id="orderItems">
+          <!-- Order items will be populated here -->
+        </div>
+
+        <div class="summary-box" aria-hidden="false">
+          <div class="summary-line">
+            <span>Items</span><span id="itemsCount">0</span>
+          </div>
+          <div class="summary-line">
+            <span>Subtotal</span><span id="subtotalPrice">₦0</span>
+          </div>
+          <div class="summary-line">
+            <span>Delivery</span><span id="deliveryPrice">₦200</span>
+          </div>
+          <div class="summary-line">
+            <span>Discount</span><span id="discountPrice">-₦0</span>
+          </div>
+          <div class="summary-total">
+            <span>Total</span><strong id="totalPrice">₦0</strong>
+          </div>
+          <div class="promo-input">
+            <input id="promoCode" placeholder="Promo code (optional)" aria-label="Promo code" />
+            <button id="applyPromo" class="btn btn-ghost">Apply</button>
+          </div>
+          <div class="checkout-actions">
+            <a class="btn btn-primary" href="#" id="placeOrderBtn">Place Order</a>
+            <a class="btn btn-outline" href="menu.html">Continue Shopping</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="payment-options">
+        <h2>Payment Method</h2>
+        <div class="payment-tabs">
+          <button class="payment-tab active" data-method="bank">
+            Bank Transfer
+          </button>
+          <button class="payment-tab" data-method="card">Card Payment</button>
+        </div>
+
+        <div id="bankTransfer" class="payment-method active">
+          <h3>Bank Transfer Details</h3>
+          <p>Transfer the total amount to the following account:</p>
+          <div class="bank-details">
+            <p><strong>Bank:</strong> First Bank of Nigeria</p>
+            <p><strong>Account Name:</strong> Sunflour Bakery Ltd</p>
+            <p><strong>Account Number:</strong> 1234567890</p>
+            <p>
+              <strong>Reference:</strong> Order #<span id="orderRef">SF001</span>
+            </p>
+          </div>
+          <p>
+            After payment, send proof to
+            <a href="mailto:orders@sunflourbakery.com">orders@sunflourbakery.com</a>
+            or WhatsApp
+            <a href="https://wa.me/2341234567890">+234 123 456 7890</a>.
+          </p>
+          <button class="btn btn-primary" id="confirmBankPayment">
+            I've Made the Transfer
+          </button>
+        </div>
+
+        <div id="cardPayment" class="payment-method">
+          <h3>Card Payment</h3>
+          <form id="cardForm">
+            <div class="form-group">
+              <label for="cardNumber">Card Number</label>
+              <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="expiry">Expiry Date</label>
+                <input type="text" id="expiry" placeholder="MM/YY" required />
+              </div>
+              <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="123" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cardName">Cardholder Name</label>
+              <input type="text" id="cardName" placeholder="John Doe" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Pay Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> Sunflour Bakery — Calabar. All rights
+        reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bottom Navigation (Mobile) -->
+  <nav class="bottom-nav" aria-label="Quick navigation">
+    <div class="bottom-nav-inner">
+      <a href="index.html" class="bottom-nav-item">
+        <span class="bottom-nav-icon">🏠</span>
+        <span>Home</span>
+      </a>
+      <a href="menu.html" class="bottom-nav-item">
+        <span class="bottom-nav-icon">🍞</span>
+        <span>Menu</span>
+      </a>
+      <a href="catering.html" class="bottom-nav-item">
+        <span class="bottom-nav-icon">🎂</span>
+        <span>Catering</span>
+      </a>
+      <a href="checkout.html" class="bottom-nav-item active" aria-current="page">
+        <span class="bottom-nav-icon">🛒</span>
+        <span>Cart</span>
+      </a>
+      <a href="contact.html" class="bottom-nav-item">
+        <span class="bottom-nav-icon">📍</span>
+        <span>Contact</span>
+      </a>
+    </div>
+  </nav>
+
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/checkout.js" defer></script>
+  <script src="scripts/animations.js" defer></script>
+  <script src="scripts/pwa.js" defer></script>
+</body>
+
+</html>

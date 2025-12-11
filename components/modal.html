@@ -1,0 +1,38 @@
+<!-- components/modal.html — Product quick-view modal -->
+<div
+  class="modal"
+  id="productModal"
+  aria-hidden="true"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modalTitle"
+>
+  <div class="modal-panel" role="document">
+    <button class="modal-close" aria-label="Close">×</button>
+    <div class="modal-content">
+      <img
+        id="modalImage"
+        src="assets/images/sample-bread.jpg"
+        alt=""
+        style="
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          object-fit: cover;
+          margin-bottom: 0.75rem;
+        "
+      />
+      <h2 id="modalTitle">Product title</h2>
+      <p id="modalTags" class="product-tags"></p>
+      <p
+        id="modalDesc"
+        class="product-desc"
+        style="margin-top: 0.5rem; color: var(--muted)"
+      ></p>
+      <div style="margin-top: 1rem; display: flex; gap: 0.5rem">
+        <button id="modalOrder" class="btn btn-primary">Order Now</button>
+        <button id="modalClose" class="btn btn-ghost">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

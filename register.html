@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register — Sunflour Bakery</title>
+
+  <!-- PWA Meta -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#e34a3b">
+  <link rel="apple-touch-icon" href="assets/icons/icon-512.png">
+
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <meta name="description"
+    content="Create your Sunflour Bakery account to order online, track deliveries, and get exclusive offers." />
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/icons/icon-512.png" alt="Sunflour Bakery logo" width="48" height="48" />
+        <span class="brand-name">Sunflour Bakery</span>
+      </a>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav"
+        aria-label="Toggle navigation menu">
+        <span class="nav-toggle-icon"></span>
+      </button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html" aria-current="page">Register</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="order-success.html">Payment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Auth Hero -->
+    <section class="auth-hero-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Join Us</span>
+          <h1>Create your account</h1>
+          <p class="section-sub">Sign up to save orders, checkout faster, and access exclusive member offers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Register Form -->
+    <section class="auth-section">
+      <div class="container">
+        <form id="registerForm" class="auth-card" novalidate>
+          <div class="auth-card-header">
+            <h2>Register</h2>
+            <p>Fill in your details to get started</p>
+          </div>
+
+          <div class="form-row-2col">
+            <div class="form-group">
+              <label for="regFirstName">First name</label>
+              <input id="regFirstName" name="firstName" required placeholder="Jane" autocomplete="given-name" />
+            </div>
+            <div class="form-group">
+              <label for="regLastName">Last name</label>
+              <input id="regLastName" name="lastName" required placeholder="Doe" autocomplete="family-name" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="regEmail">Email address</label>
+            <input id="regEmail" name="email" type="email" required placeholder="you@example.com"
+              autocomplete="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="regPhone">Phone number</label>
+            <input id="regPhone" name="phone" type="tel" required placeholder="+234 812 345 6789" autocomplete="tel" />
+          </div>
+
+          <div class="form-group">
+            <label for="regPassword">Password</label>
+            <input id="regPassword" name="password" type="password" required
+              placeholder="Choose a strong password (min 8 characters)" autocomplete="new-password" minlength="8" />
+          </div>
+
+          <div class="form-group">
+            <label for="regConfirmPassword">Confirm password</label>
+            <input id="regConfirmPassword" name="confirmPassword" type="password" required
+              placeholder="Re-enter your password" autocomplete="new-password" />
+          </div>
+
+          <label class="checkbox-label">
+            <input type="checkbox" name="terms" required />
+            <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+          </label>
+
+          <label class="checkbox-label">
+            <input type="checkbox" name="newsletter" />
+            <span>Subscribe to our newsletter for exclusive offers</span>
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+
+          <div class="auth-divider">
+            <span>or</span>
+          </div>
+
+          <div class="auth-helpers">
+            <p>Already have an account? <a href="login.html">Sign in</a></p>
+            <a href="index.html" class="back-link">← Back to shop</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> Sunflour Bakery — Calabar. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bottom Navigation (Mobile) -->
+  <nav class="bottom-nav" aria-label="Quick navigation">
+    <div class="bottom-nav-inner">
+      <a href="index.html" class="bottom-nav-item">
+        <span class="bottom-nav-icon">🏠</span>
+        <span>Home</span>
+      </a>
+      <a href="menu.html" class="bottom-nav-item">
+        <span class="bottom-nav-icon">🍞</span>
+        <span>Menu</span>
+      </a>
+      <a href="catering.html" class="bottom-nav-item">
+        <span class="bottom-nav-icon">🎂</span>
+        <span>Catering</span>
+      </a>
+      <a href="checkout.html" class="bottom-nav-item">
+        <span class="bottom-nav-icon">🛒</span>
+        <span>Cart</span>
+      </a>
+      <a href="contact.html" class="bottom-nav-item">
+        <span class="bottom-nav-icon">📍</span>
+        <span>Contact</span>
+      </a>
+    </div>
+  </nav>
+
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/pwa.js" defer></script>
+</body>
+
+</html>

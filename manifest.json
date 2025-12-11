@@ -1,0 +1,38 @@
+{
+  "name": "Sunflour Bakery — Calabar",
+  "short_name": "Sunflour",
+  "description": "Fresh breads, cakes, pastries and fast foods baked daily in Calabar. Order online for delivery or pickup.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff8f5",
+  "theme_color": "#e34a3b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "shopping", "lifestyle"],
+  "lang": "en",
+  "dir": "ltr",
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Browse Menu",
+      "short_name": "Menu",
+      "description": "View our delicious menu",
+      "url": "/menu.html",
+      "icons": []
+    },
+    {
+      "name": "Catering Request",
+      "short_name": "Catering",
+      "description": "Request catering for your event",
+      "url": "/catering.html",
+      "icons": []
+    }
+  ]
+}

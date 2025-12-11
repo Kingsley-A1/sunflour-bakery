@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Verify — Sunflour Bakery</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img
+            src="assets/logo-placeholder.svg"
+            alt="Sunflour Bakery logo"
+            width="48"
+            height="48"
+          />
+          <span class="brand-name">Sunflour Bakery</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="auth-hero">
+        <div class="container">
+          <h1>Verify your account</h1>
+          <p>Enter the 6-digit code we sent to your phone or email.</p>
+        </div>
+      </section>
+
+      <section class="container">
+        <form id="verifyForm" class="auth-form" novalidate>
+          <h2>Enter verification code</h2>
+          <div class="form-group">
+            <label for="code">Verification code</label>
+            <input
+              id="code"
+              name="code"
+              inputmode="numeric"
+              pattern="[0-9]{6}"
+              required
+              placeholder="123456"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Verify</button>
+          <div class="auth-helpers">
+            <a href="register.html">Back to register</a>
+            <a href="index.html">Back to shop</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/auth.js" defer></script>
+  </body>
+</html>
